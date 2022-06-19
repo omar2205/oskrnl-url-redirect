@@ -2,7 +2,7 @@ from bottle import Bottle, request, response, redirect # pylint: disable=import-
 from pydantic import ValidationError # pylint: disable=import-error
 
 from .utils.URL_shortener_service import shorten_url, get_url
-from .utils.helpers import HTTP_CODES, generate_res_body
+from .utils.helpers import HTTP_CODES
 
 app = Bottle()
 
