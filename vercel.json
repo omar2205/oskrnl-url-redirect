@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/go/(.*)", "destination": "/api/go" },
+    { "source": "/create", "destination": "/api/go" },
+    { "source": "/create_admin", "destination": "/api/create_admin" }
+  ]
+}
