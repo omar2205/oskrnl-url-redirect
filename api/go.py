@@ -3,8 +3,10 @@ from pydantic import ValidationError # pylint: disable=import-error
 
 from .utils.URL_shortener_service import shorten_url, get_url
 from .utils.helpers import HTTP_CODES
+from .utils.handle_errors import handler as err_handler
 
 app = Bottle()
+app.error_handler = err_handler
 
 @app.route('/go/<uid>')
 def redirect_url(uid):

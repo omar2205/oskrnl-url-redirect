@@ -1,8 +1,10 @@
 import os
 from bottle import Bottle, request, response # pylint: disable=import-error
 from .utils.helpers import HTTP_CODES
+from .utils.handle_errors import handler as err_handler
 
 app = Bottle()
+app.error_handler = err_handler
 
 @app.route('/create_admin', method='POST')
 def create_admin():
