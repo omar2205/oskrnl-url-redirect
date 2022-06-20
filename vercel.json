@@ -5,6 +5,7 @@
   "rewrites": [
     { "source": "/go/(.*)", "destination": "/api/go" },
     { "source": "/create", "destination": "/api/go" },
+    { "source": "/get_url/(.*)", "destination": "/api/get_url" },
     { "source": "/create_admin", "destination": "/api/create_admin" }
   ]
 }
