@@ -6,9 +6,9 @@
   async function handle_form(e: any) {
     e.preventDefault()
     const formData = new FormData(e.target)
-    const uuid = formData.get('url')
+    const uid = formData.get('uid')
 
-    const { data } = await getURLFromUID(uuid as string)
+    const { data } = await getURLFromUID(uid as string)
     res = data
   }
 </script>
